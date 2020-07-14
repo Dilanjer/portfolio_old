@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Kanit", sans-serif;
+}
+.portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.projects {
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
+  height: 100vh;
+  background-color: #efefef;
+  overflow: auto;
+}
+.projects .project__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 20px;
+}
+.projects .project__item {
+  -ms-flex-preferred-size: calc(50% - 30px);
+      flex-basis: calc(50% - 30px);
+  width: 310px;
+  height: auto;
+  background-color: #fff;
+  margin: 10px;
+  padding: 5px;
+  -webkit-box-shadow: 3px 5px 3px #a5a5a5;
+          box-shadow: 3px 5px 3px #a5a5a5;
+  position: relative;
+}
+.projects .project__item img {
+  width: 100%;
+}
+.projects .project__item .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.projects .project__item .content span {
+  opacity: 0.8;
+}
+.projects .project__item .content .info {
+  font-size: 18px;
+  max-width: 300px;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+}
+.projects .project__item .content .info .date,
+.projects .project__item .content .info .technology {
+  font-size: 16px;
+}
+.projects .project__item .content .show__project {
+  background-color: #22A9E0;
+  padding: 5px 10px;
+  -webkit-box-shadow: 2px 3px 1px #076AC3;
+          box-shadow: 2px 3px 1px #076AC3;
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: background-color 0.15s linear;
+  -o-transition: background-color 0.15s linear;
+  transition: background-color 0.15s linear;
+}
+.projects .project__item .content .show__project:hover {
+  background-color: #1988b6;
+  -webkit-box-shadow: 2px 3px 1px #054f92;
+          box-shadow: 2px 3px 1px #054f92;
+}
+.sidebar {
+  text-align: center;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  height: 100vh;
+  background-color: #171d24;
+  color: #fff;
+  position: relative;
+}
+.sidebar .content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.sidebar .content .name,
+.sidebar .content .surname {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 34px;
+  letter-spacing: 3px;
+}
+.sidebar .content .surname {
+  font-size: 24px;
+}
+.sidebar .content .specialization {
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+.sidebar .content .social {
+  padding-top: 10px;
+}
+.sidebar .content .social img {
+  width: 30px;
+}

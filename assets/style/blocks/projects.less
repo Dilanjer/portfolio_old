@@ -1,0 +1,57 @@
+// main: ../style.less
+
+
+.projects {
+  flex-basis: 75%;
+  height: 100vh;
+  background-color: #efefef;
+  overflow: auto;
+  .project__items {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  .project__item {
+    flex-basis: calc(50% - 30px);
+    width: 310px;
+    height: auto;
+    background-color: #fff;
+    margin: 10px;
+    padding: 5px;
+    box-shadow: 3px 5px 3px darken(#cbcbcb, 15%);
+    position: relative;
+    img {
+      width: 100%;
+    }
+    .content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      span {
+        opacity: 0.8;
+      }
+      .info {
+        font-size: 18px;
+        max-width: 300px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        .date, .technology {
+          font-size: 16px;
+        }
+      }
+      .show__project {
+        background-color: #22A9E0;
+        padding: 5px 10px;
+        box-shadow: 2px 3px 1px #076AC3;
+        text-decoration: none;
+        color: #fff;
+        transition: background-color 0.15s linear;
+        &:hover {
+        background-color: darken(#22A9E0, 10%);
+        box-shadow: 2px 3px 1px darken(#076AC3, 10%);
+        }
+      }
+    }
+  }
+}

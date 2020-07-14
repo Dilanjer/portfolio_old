@@ -1,0 +1,36 @@
+// main: ../style.less
+.sidebar {
+  text-align: center;
+  flex-basis: 25%;
+  height: 100vh;
+  background-color: #171d24;
+  color: #fff;
+  position: relative;
+  .content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    .name,
+    .surname {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 34px;
+      letter-spacing: 3px;
+    }
+    .surname {
+      font-size: 24px;
+    }
+    .specialization {
+      font-weight: 300;
+      letter-spacing: 2px;
+    }
+    .social {
+      padding-top: 10px;
+      img {
+        width: 30px;
+      }
+    }
+  }
+}
