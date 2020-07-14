@@ -117,3 +117,86 @@ body {
 .sidebar .content .social img {
   width: 30px;
 }
+@media only screen and (max-width: 992px) {
+  .portfolio {
+    display: block;
+  }
+  .portfolio .sidebar {
+    height: 130px;
+  }
+  .portfolio .sidebar .content .name,
+  .portfolio .sidebar .content .surname {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 3px;
+  }
+  .portfolio .sidebar .content .surname {
+    font-size: 18px;
+  }
+  .portfolio .sidebar .content .specialization {
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 14px;
+  }
+  .portfolio .sidebar .content .social {
+    padding-top: 10px;
+  }
+  .portfolio .sidebar .content .social img {
+    width: 20px;
+  }
+  .portfolio .projects {
+    overflow: unset;
+  }
+  .portfolio .projects .project__item {
+    width: 100%;
+    -ms-flex-preferred-size: unset;
+        flex-basis: unset;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .projects .project__item .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .projects .project__item .content span {
+    opacity: 0.8;
+    font-size: 12px;
+  }
+  .projects .project__item .content .info {
+    font-size: 16px;
+  }
+  .projects .project__item .content .info .date,
+  .projects .project__item .content .info .technology {
+    font-size: 14px;
+  }
+  .projects .project__item .content .btn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .projects .project__item .content .btn .show__project {
+    font-size: 14px;
+    background-color: #22A9E0;
+    padding: 5px 10px;
+    -webkit-box-shadow: 2px 3px 1px #076AC3;
+            box-shadow: 2px 3px 1px #076AC3;
+    text-decoration: none;
+    color: #fff;
+    -webkit-transition: background-color 0.15s linear;
+    -o-transition: background-color 0.15s linear;
+    transition: background-color 0.15s linear;
+  }
+  .projects .project__item .content .btn .show__project:hover {
+    background-color: #1988b6;
+    -webkit-box-shadow: 2px 3px 1px #054f92;
+            box-shadow: 2px 3px 1px #054f92;
+  }
+}
