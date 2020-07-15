@@ -52,15 +52,17 @@ body {
 .projects .project__item .content span {
   opacity: 0.8;
 }
-.projects .project__item .content .info {
-  font-size: 18px;
+.projects .project__item .content .project__info {
   max-width: 300px;
   overflow: hidden;
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis;
 }
-.projects .project__item .content .info .date,
-.projects .project__item .content .info .technology {
+.projects .project__item .content .project__info .project__name {
+  font-size: 18px;
+}
+.projects .project__item .content .project__info .project__date,
+.projects .project__item .content .project__info .project__technology {
   font-size: 16px;
 }
 .projects .project__item .content .show__project {
@@ -155,32 +157,35 @@ body {
   }
 }
 @media only screen and (max-width: 500px) {
+  .projects {
+    overflow: unset;
+  }
+  .projects .project__item {
+    width: 100%;
+    -ms-flex-preferred-size: unset;
+        flex-basis: unset;
+  }
   .projects .project__item .content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    display: block;
   }
   .projects .project__item .content span {
     opacity: 0.8;
     font-size: 12px;
   }
-  .projects .project__item .content .info {
-    font-size: 16px;
+  .projects .project__item .content .project__info {
+    text-align: left;
   }
-  .projects .project__item .content .info .date,
-  .projects .project__item .content .info .technology {
-    font-size: 14px;
+  .projects .project__item .content .project__info .project__date,
+  .projects .project__item .content .project__info .project__technology {
+    font-size: 11px;
+  }
+  .projects .project__item .content .project__info .project__name {
+    font-size: 13px;
   }
   .projects .project__item .content .btn {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
   }
   .projects .project__item .content .btn .show__project {
     font-size: 14px;

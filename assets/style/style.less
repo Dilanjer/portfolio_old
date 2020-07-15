@@ -53,25 +53,33 @@ body {
 
 @media only screen and (max-width: 500px) {
   .projects { 
+    overflow: unset;
+
     .project__item {
+      width: 100%;
+      flex-basis: unset;
       .content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        display: block;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
         span {
           opacity: 0.8;
           font-size: 12px;
         }
-        .info {
-          font-size: 16px;
-       
-          .date, .technology {
-            font-size: 14px;
+        .project__info {
+          text-align: left;
+          .project__date, .project__technology {
+            font-size: 11px;
+          }
+          .project__name {
+            font-size: 13px;
           }
         }
         .btn {
-          margin-top: 10px;
-          margin-bottom: 10px;
+          margin-top: 15px;
+          margin-bottom: 15px;
+          text-align: center;
           .show__project {
             font-size: 14px;
             background-color: #22A9E0;
