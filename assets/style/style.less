@@ -9,6 +9,27 @@ body {
 }
 @import "blocks/projects.less";
 @import "blocks/sidebar.less";
+@media only screen and (max-width: 1450px) {
+  .projects {
+    .project__item {
+      .content {
+        span {
+          opacity: 0.8;
+          font-size: 14px;
+        }
+        .project__info {
+          .project__date,
+          .project__technology {
+            font-size: 14px;
+          }
+          .project__name {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
 @media only screen and (max-width: 992px) {
   .portfolio {
     display: block;
@@ -59,9 +80,6 @@ body {
       flex-basis: unset;
       .content {
         display: block;
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: center;
         span {
           opacity: 0.8;
           font-size: 12px;
