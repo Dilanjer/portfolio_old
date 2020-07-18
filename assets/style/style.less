@@ -3,7 +3,6 @@ body {
   padding: 0;
   font-family: "Kanit", sans-serif;
   background-color: #efefef;
-
 }
 .portfolio {
   display: flex;
@@ -12,11 +11,10 @@ body {
 @import "blocks/sidebar.less";
 @media only screen and (max-width: 992px) {
   .portfolio {
-
     display: block;
 
     .sidebar {
-      height: 130px;
+      height: 160px;
       .content {
         .name,
         .surname {
@@ -47,14 +45,13 @@ body {
       .project__item {
         width: 100%;
         flex-basis: unset;
+      }
     }
   }
 }
 
-}
-
 @media only screen and (max-width: 500px) {
-  .projects { 
+  .projects {
     overflow: unset;
 
     .project__item {
@@ -71,7 +68,8 @@ body {
         }
         .project__info {
           text-align: left;
-          .project__date, .project__technology {
+          .project__date,
+          .project__technology {
             font-size: 11px;
           }
           .project__name {
@@ -84,22 +82,19 @@ body {
           text-align: center;
           .show__project {
             font-size: 14px;
-            background-color: #22A9E0;
+            background-color: #22a9e0;
             padding: 5px 10px;
-            box-shadow: 2px 3px 1px #076AC3;
+            box-shadow: 2px 3px 1px #076ac3;
             text-decoration: none;
             color: #fff;
             transition: background-color 0.15s linear;
             &:hover {
-            background-color: darken(#22A9E0, 10%);
-            box-shadow: 2px 3px 1px darken(#076AC3, 10%);
+              background-color: darken(#22a9e0, 10%);
+              box-shadow: 2px 3px 1px darken(#076ac3, 10%);
             }
-        }
-        
+          }
         }
       }
     }
   }
-  
 }
-

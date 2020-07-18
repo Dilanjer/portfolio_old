@@ -107,6 +107,11 @@ body {
   font-size: 34px;
   letter-spacing: 3px;
 }
+.sidebar .content .mail {
+  font-weight: 300;
+  font-size: 14px;
+  margin-top: 5px;
+}
 .sidebar .content .surname {
   font-size: 24px;
 }
@@ -125,7 +130,7 @@ body {
     display: block;
   }
   .portfolio .sidebar {
-    height: 130px;
+    height: 160px;
   }
   .portfolio .sidebar .content .name,
   .portfolio .sidebar .content .surname {
@@ -190,10 +195,10 @@ body {
   }
   .projects .project__item .content .btn .show__project {
     font-size: 14px;
-    background-color: #22A9E0;
+    background-color: #22a9e0;
     padding: 5px 10px;
-    -webkit-box-shadow: 2px 3px 1px #076AC3;
-            box-shadow: 2px 3px 1px #076AC3;
+    -webkit-box-shadow: 2px 3px 1px #076ac3;
+            box-shadow: 2px 3px 1px #076ac3;
     text-decoration: none;
     color: #fff;
     -webkit-transition: background-color 0.15s linear;
