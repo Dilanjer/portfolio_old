@@ -12,8 +12,6 @@
   }
   .project__item {
     flex-basis: calc(50% - 30px);
-    width: 310px;
-    height: auto;
     background-color: #fff;
     margin: 10px;
     padding: 5px;
@@ -26,7 +24,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-
+      flex-wrap: wrap;
       span {
         opacity: 0.8;
       }
@@ -42,18 +40,25 @@
           font-size: 16px;
         }
       }
-      .show__project {
-        background-color: #22a9e0;
-        padding: 5px 10px;
-        box-shadow: 2px 3px 1px #076ac3;
-        text-decoration: none;
-        color: #fff;
-        transition: background-color 0.15s linear;
-        &:hover {
-          background-color: darken(#22a9e0, 10%);
-          box-shadow: 2px 3px 1px darken(#076ac3, 10%);
+      .btn {
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        .show__project {
+          display: inline-block;
+          background-color: #22a9e0;
+          padding: 5px 10px;
+          box-shadow: 2px 3px 1px #076ac3;
+          text-decoration: none;
+          color: #fff;
+          transition: background-color 0.15s linear;
+          &:hover {
+            background-color: darken(#22a9e0, 10%);
+            box-shadow: 2px 3px 1px darken(#076ac3, 10%);
+          }
         }
       }
+      
     }
   }
 }

@@ -27,8 +27,6 @@ body {
 .projects .project__item {
   -ms-flex-preferred-size: calc(50% - 30px);
       flex-basis: calc(50% - 30px);
-  width: 310px;
-  height: auto;
   background-color: #fff;
   margin: 10px;
   padding: 5px;
@@ -49,6 +47,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .projects .project__item .content span {
   opacity: 0.8;
@@ -66,7 +66,13 @@ body {
 .projects .project__item .content .project__info .project__technology {
   font-size: 16px;
 }
-.projects .project__item .content .show__project {
+.projects .project__item .content .btn {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.projects .project__item .content .btn .show__project {
+  display: inline-block;
   background-color: #22a9e0;
   padding: 5px 10px;
   -webkit-box-shadow: 2px 3px 1px #076ac3;
@@ -77,7 +83,7 @@ body {
   -o-transition: background-color 0.15s linear;
   transition: background-color 0.15s linear;
 }
-.projects .project__item .content .show__project:hover {
+.projects .project__item .content .btn .show__project:hover {
   background-color: #1988b6;
   -webkit-box-shadow: 2px 3px 1px #054f92;
           box-shadow: 2px 3px 1px #054f92;
