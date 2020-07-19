@@ -210,6 +210,7 @@ body {
   .projects .project__item .content .btn {
     margin-top: 15px;
     margin-bottom: 15px;
+    padding: 0;
     text-align: center;
   }
   .projects .project__item .content .btn .show__project {
